@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: '.app-test',
   // templateUrl: './test.component.html',
   template: `<div>
-              Inline template 2
+              Inline template 3
             </div>`,
   // styleUrls: ['./test.component.css']
   styles: [`
