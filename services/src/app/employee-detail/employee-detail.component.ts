@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   template: `
@@ -13,9 +14,9 @@ styles: []
 })
 export class EmployeeDetailComponent implements OnInit {
 
-  public employees = []
-  constructor(){}
+  public employees:Array<any> = []
+  constructor(private _employeeService: EmployeeService){}
   ngOnInit(): void {
-    
+    this.employees = this._employeeService.getEmployees()
   }
 }

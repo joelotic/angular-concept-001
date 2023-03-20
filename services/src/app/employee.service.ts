@@ -13,7 +13,8 @@ export class EmployeeService {
       {"id": 2, "name": "name2", "age":26},
       {"id": 3, "name": "name3", "age":27},
       {"id": 4, "name": "name4", "age":28},
-      {"id": 5, "name": "name5", "age":29}
+      {"id": 5, "name": "name5", "age":29},
+      {"id": 6, "name": "name5", "age":30}
     ];
   }
 }
