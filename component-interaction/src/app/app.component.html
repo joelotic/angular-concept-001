@@ -1,0 +1,6 @@
+<div style="text-align: center;">
+  <h2>App Module - Component interaction</h2>
+  <br>
+  <h2>{{message}}</h2>
+</div>
+<app-test (childEvent)="message=$event" [parentData]="name"></app-test>
