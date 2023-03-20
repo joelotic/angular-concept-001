@@ -25,19 +25,26 @@ import { Component, OnInit } from '@angular/core';
     <h3>
       ******* ngSwitch  *******
     </h3>
-    <div  [ngSwitch]="color" >
+    <div  [ngSwitch]="colors" >
       <div *ngSwitchCase="'red'"> You picked red color </div>
       <div *ngSwitchCase="'green'"> You picked green color </div>
       <div *ngSwitchCase="'blue'">You picked blue color</div>
       <div *ngSwitchDefault> Pick a color</div>
     </div>
+
+    <h3>
+      ******* ngFor  *******
+    </h3>
+   <div *ngFor="let color of colors">
+    <h2>{{color}}</h2>
+   </div>
   `,
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
 
   public isTrue = false
-  public color = "bluex"
+  public colors = ["blue","yellow","pink"]
   constructor(){}
   ngOnInit(){}
 }
